@@ -1,9 +1,7 @@
-/* drawing borders for everything so you can see the containers*/
+/* drawing borders for everything so I can see the containers*/
 * {
   border: 1px solid #bbb;
 }
-
-
 
 .logo {
   width: 200px;
@@ -11,7 +9,7 @@
 
 .navbar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: stretch;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -28,15 +26,12 @@ hr {
     display: block;
     margin: 0;
     border: 0;
-    height: 5px;
     background-image: url('./assets/honey-line.png');
     background-size: contain;
-  height: 100px;
+  height: 50px;
 }
 
-
-
-.jumbotron {
+.banner {
   display: flex;
   align-items: center;
   background-image: url('https://images.unsplash.com/photo-1495214783159-3503fd1b572d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
@@ -46,10 +41,11 @@ hr {
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
-/* img {
+img {
   max-width: 100%;
   height: auto;
-} */
+  vertical-align: text-bottom;
+}
 
 .grid-container {
     display: grid;
@@ -61,11 +57,14 @@ hr {
     text-align: center;
   }
 
-.intro-card  {
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   text-align: left;
   grid-column: 1 / -1;
   background: white;
-  padding: 10px;
+  padding: 15px;
   border: 2px solid #FFCF10;
 }
 
@@ -87,14 +86,16 @@ h3 {
   margin: auto;
 }
 
-.intro-button {
+.button {
+
   color: white;
   width: 150px;
   background: #9FC492;
-  padding: 15px 25px;
+  padding: 15px 5px;
   border-radius: 16px;
   text-decoration: none;
-  text-decoration: dashed;
+  align-content: center;
+ 
 }
 
 .article {
@@ -116,19 +117,19 @@ h3 {
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-column: 1 / -1;
+  justify-content: stretch;
   padding: 5px;
 }
 
 /* Social Icons */
 .demopadding {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: auto;
-  width:140px;
-  text-align:center;
+  width: 300px ;
+  text-align: center;
 }
 .icon {
 	position:relative;
