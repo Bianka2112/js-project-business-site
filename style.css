@@ -1,0 +1,138 @@
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 10px;
+  background: white;
+}
+
+hr{
+  color: #9FC492;
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #9FC492;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('https://images.unsplash.com/photo-1495214783159-3503fd1b572d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background-size: cover;
+  color: #ffffff;
+  height: 250px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  article {
+  background: white;
+  padding: 10px;
+  border: 2px solid #FFCF10;
+  display: grid;
+  
+}
+
+h3 {
+  font-family: La Belle aurore;
+  font-size: 30px;
+  font-weight: 500;
+  color: #FFCF10;
+  margin: auto;
+}
+
+
+.button {
+  color: white;
+  width: 150px;
+  background: #9FC492;
+  padding: 15px 25px;
+  border-radius: 40px;
+  margin-right: 1em;
+  text-decoration: none;
+  text-decoration: dashed;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Social Icons */
+.demopadding {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width:140px;
+  text-align:center;
+}
+.icon {
+	position:relative;
+	text-align:center;
+	width:0px;
+	height:0px;
+	padding:20px;
+	border-top-right-radius: 	20px;
+	border-top-left-radius: 	20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 	20px; 
+	-moz-border-radius: 		20px 20px 20px 20px;
+	-webkit-border-radius: 		20px 20px 20px 20px;
+	-khtml-border-radius: 		20px 20px 20px 20px; 	
+	color:#FFFFFF;
+}
+.icon i {
+	font-size:20px;
+	position:absolute;
+	left:9px;
+	top:10px;
+}
+.icon.social {
+	float:left;
+	margin:0 5px 0 0;
+	cursor:pointer;
+	background:#FFCF10 ;
+	color:white;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s; 	
+}
+.icon.social:hover {
+	background:#FFCF10 ;
+	color:#6d6e71;
+	transition: 0.5s;
+	-moz-transition: 0.5s;
+	-webkit-transition: 0.5s;
+	-o-transition: 0.5s;
+	-webkit-filter:	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-moz-filter: 	drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-ms-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
+	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
+}
+.icon.social.fb i {
+	left:13px;
+	top:10px;
+}
+.icon.social.tw i {
+	left:11px;
+}
+.icon.social.in i {
+	left:11px;
+}
