@@ -9,10 +9,11 @@
 
 .navbar {
   display: flex;
-  flex-wrap: stretch;
-  justify-content: center;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+  justify-content: flex-start;
   align-content: center;
-  align-items: center;
+  align-items: baseline;
   padding: 10px;
   background: white;
 }
@@ -34,10 +35,10 @@ hr {
 .banner {
   display: flex;
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1495214783159-3503fd1b572d?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-  background-size: cover;
+  background-image: url('./assets/brunch.jpg');
+  background-size: contain;
   color: #ffffff;
-  height: 250px;
+  height: 300px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
 }
 
@@ -54,7 +55,7 @@ a {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px);
-    grid-template-rows: repeat(auto-fill, 1fr);
+    /* grid-template-rows: repeat(auto-fill, 1fr); */
     grid-row-gap: 30px;
     justify-content: space-around;
     margin: 20px 10px;
@@ -90,17 +91,21 @@ h3 {
   margin: auto;
 }
 
-.button {
+.button, .article-button {
   display: flex;
   flex-direction: column;
   color: white;
-  width: 150px;
-  background: #9FC492;
+  background-color: #9FC492;width: 150px;
   padding: 15px 5px;
   border-radius: 16px;
+  text-align: center;
   text-decoration: none;
-  align-content: center;
- 
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.button:hover, .article-button:hover {
+  background-color: #ff9f00;
 }
 
 .article {
@@ -108,24 +113,38 @@ h3 {
   background-color: #9FC492;
   padding: 12px 20px;
   border-radius: 15px;
-  justify-self: center;
+  /* justify-self: center; */
   justify-content: center;
   /* Add shadows to create the "card" effect */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px; /* Fixed height for consistency */
+  max-width: 100%;
 }
 
-/* On mouse-over, add a deeper shadow */
 .article:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.grid-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
 .footer-container {
+  text-size-adjust: xx-large;
   display: grid;
   grid-column: 1 / -1;
   justify-content: stretch;
-  padding: 5px;
+  padding: 15px 0;
+ 
 }
 
 /* Social Icons */
@@ -190,4 +209,34 @@ h3 {
 }
 .icon.social.in i {
 	left:11px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    height: 250px;
+  }
+
+  .grid-item {
+    height: 400px; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .button, .article-button {
+    padding: 0.8rem;
+  }
 }
