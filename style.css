@@ -3,20 +3,17 @@
   border: 1px solid #bbb;
 } */
 
-.logo {
-  width: 200px;
-}
 
 .navbar .nav-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  width: 100%;
 }
 
 .nav-links a {
   padding: 0.5rem 1rem;
   text-transform: uppercase;
+  font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
   color: #9FC492;
@@ -35,16 +32,9 @@ hr {
   display: flex;
   align-items: center;
   background-image: url('./assets/brunch.jpg');
-  background-size: contain;
+  background-size: cover;
   color: #ffffff;
-  height: 300px;
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: text-bottom;
+  height: 50vh;
 }
 
 a {
@@ -65,11 +55,36 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  text-align: left;
+  text-align: center;
   grid-column: 1 / -1;
   background: white;
   padding: 15px;
   border: 2px solid #FFCF10;
+  margin: 20px;
+}
+.flex-item {
+  display: flex;
+  flex-wrap: column;
+  flex-direction: row;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item.button {
+  display: flex;
+  color: white;
+  background-color: #9FC492;
+  padding: 15px 5px;
+  border-radius: 16px;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease;
+  
 }
 
 h2, h3 {
@@ -81,7 +96,7 @@ h2, h3 {
   margin: auto;
 }
 
-.button, .article-button {
+.article-button {
   display: flex;
   flex-direction: column;
   color: white;
@@ -92,6 +107,7 @@ h2, h3 {
   text-decoration: none;
   justify-content: center;
   text-transform: uppercase;
+  transition: background-color 0.5s ease;
 }
 
 .button:hover, .article-button:hover {
