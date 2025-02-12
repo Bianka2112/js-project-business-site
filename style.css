@@ -4,16 +4,26 @@
 } */
 
 
+
 .navbar .nav-links {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+
+}
+
 .nav-links a {
+  width: 50%;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   font-weight: bold;
   text-decoration: none;
   color: #9FC492;
@@ -29,12 +39,8 @@ hr {
 }
 
 .banner {
-  display: flex;
-  align-items: center;
-  background-image: url('./assets/brunch.jpg');
-  background-size: cover;
   color: #ffffff;
-  height: 50vh;
+  height: 20vh;
 }
 
 a {
@@ -43,12 +49,14 @@ a {
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     /* grid-template-rows: repeat(auto-fill, 1fr); */
-    grid-row-gap: 30px;
+    grid-gap: 30px;
     justify-content: space-around;
     margin: 20px 10px;
     text-align: center;
+
   }
 
 .flex-container {
@@ -215,14 +223,14 @@ h2, h3 {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1008px) {
   .navbar .nav-links {
     flex-direction: column;
     align-items: center;
   }
 
   .grid-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
   .banner {
@@ -237,6 +245,10 @@ h2, h3 {
 @media (max-width: 480px) {
   .grid-item h3 {
     font-size: 1.2rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 
   .button, .article-button {
