@@ -3,8 +3,6 @@
   border: 1px solid #bbb;
 } */
 
-
-
 .navbar .nav-links {
   display: flex;
   flex-direction: column;
@@ -39,8 +37,16 @@ hr {
 }
 
 .banner {
-  color: #ffffff;
-  height: 20vh;
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/brunch.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #FFCF10;
+  align-content: center;
+  justify-items: center;
 }
 
 a {
