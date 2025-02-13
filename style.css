@@ -65,11 +65,12 @@ hr {
   z-index: 2;
   color: white;
   font-size: 40px;
+  color: #FFCF10;
 }
 
-.banner {
+.footer-banner {
   position: relative;
-  height: 50vh;
+  height: 30vh;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/brunch.jpg");
   background-position: center;
