@@ -14,24 +14,44 @@
 <body>
 
   <header>
-    <div class="navbar">
+    <nav class="navbar">
       
-      <img class="logo" src="./assets/logo-large-transparent.png" alt="The Stockholm Buzz logo"/>
+      <img class="logo" src="./assets/logo-large-transparent.png" alt="The Stockholm Buzz logo">
     
       <div class="nav-links"> 
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-          <img class="img-h2" src="./assets/bees-transparent.png" alt="bee background" style="width: 100px;">
+        <img class="img-bees" 
+        src="./assets/3.svg" alt="decorative bees" style="width: 100px;">
         
       </div>
-    </div>
+    </nav>
   </header>
+
+  <section class="hero-container">
+    <div class="overlay"></div>
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="hero-video"
+      poster="./fallback-image.jpg">
+      <!-- 👆 Adding the poster attribute to include a fallback image. Test this by opening the inspector and go in to the Network tab and simulate a slow internet connection by changing the Throttling from "No throttling" to "3G" or "Slow 4G"  -->
+      <source
+        src="./hero-video.mp4" type="video/mp4">
+      Your browser doesn't support the video tag
+    </video>
+    <h1 class="hero-heading">My hero heading</h1>
+  </section>
 
   <section class="banner">
     <h1>The latest and greatest buzz about food. drinks. & more.
     </h1>
   </section>
+
+  
   
   <hr>
   

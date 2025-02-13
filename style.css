@@ -3,28 +3,28 @@
   border: 1px solid #bbb;
 } */
 
-.navbar .nav-links {
+body{
+  margin: 0;
+}
+
+.navbar {
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  padding: 15px
 }
 
 .logo {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-
+  width: 20%;
+  height: 20%;
 }
 
 .nav-links a {
-  width: 50%;
-  padding: 0.5rem 1rem;
-  text-transform: uppercase;
-  /* font-size: 1.8rem; */
-  font-weight: bold;
-  text-decoration: none;
-  color: #9FC492;
+ color: #9FC492;
+}
+ 
+.navbar a:hover{
+  background-color: #FFCF10;
+  color: white;
 }
 
 hr {
@@ -33,13 +33,43 @@ hr {
     border: 0;
     background-image: url('./assets/honey-line.png');
     background-size: contain;
-  height: 50px;
+    height: 50px;
+}
+
+.hero-container {
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hero-video {
+  position: absolute;
+  z-index: -1;
+  /* Styling the poster image 👇*/
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-heading {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 40px;
 }
 
 .banner {
   position: relative;
   height: 50vh;
-  overflow: hidden;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./assets/brunch.jpg");
   background-position: center;
@@ -47,6 +77,11 @@ hr {
   color: #FFCF10;
   align-content: center;
   justify-items: center;
+}
+
+.banner h1 {
+  padding: 10px 10px;
+  align-self: center;
 }
 
 a {
@@ -121,7 +156,7 @@ h2, h3 {
   text-decoration: none;
   justify-content: center;
   text-transform: uppercase;
-  transition: background-color 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .button:hover, .article-button:hover {
