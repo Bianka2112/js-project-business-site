@@ -138,7 +138,6 @@ h2 {
   text-align: center;
 }
 
-
 .grid-item.article {
   background-color: white;
   color: #FFCF10;
@@ -153,7 +152,6 @@ h2 {
   justify-content: space-between;
   height: 350px;
   max-width: 100%;
-
 }
 
 .article:hover {
@@ -307,14 +305,14 @@ fieldset:hover {
   }
 }
 
-@media (min-width: 320px) {
+@media (max-width: 365px) {
   .nav-links {
-    font-size: 1rem;
-    padding: 5px;
+    display: none;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
+
   }
 
   .grid-item {
