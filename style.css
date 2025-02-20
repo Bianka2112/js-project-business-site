@@ -1,7 +1,4 @@
-/* drawing borders for everything so I can see the containers*/
-/* * {
-  border: 1px solid #bbb;
-} */
+
 
 body {
   margin: 0;
@@ -12,46 +9,34 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: .5rem;
-  
+  margin: 5px;
 }
 
 .nav-logo {
-  display: flex;
   width: 50%;
   height: 50%;
 }
 
 .nav-links a {
-  /* display: none; */
   padding: .5rem;
   color: #9FC492;
-  font-size:1.5em;
+  font-size:1.3em;
   text-decoration: none;
 }
 
-.navbar a.icon {
-  background: #FFCF10;
-  /* display: none; */
-  right: 0;
-  top: 0;
+.hamburger-menu {
+  display: none;
 }
  
-.navbar a:hover{
+.nav-links a:hover, .navlinks a:focus {
   background-color: #FFCF10;
   color: white;
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto 20px;
 }
 
-:focus {
-  outline: 1px dotted #FFCF10;
-  outline-offset: 0.2rem;
-}
 
 hr {
     display: block;
@@ -93,47 +78,10 @@ hr {
 .hero-heading {
   position: relative;
   z-index: 2;
-  color: white;
   font-size: 40px;
   color: #FFCF10;
 }
 
-  /* Flex box inside of Flex grid */
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  grid-column: 1 / -1;
-  background: white;
-  padding: 15px;
-  border: 2px solid #FFCF10;
-  margin: 20px;
-}
-
-.flex-item {
-  display: flex;
-  flex-wrap: column;
-  flex-direction: row;
-  padding: 15px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.flex-item.button {
-  display: flex;
-  color: white;
-  background-color: #9FC492;
-  padding: 15px 5px;
-  border-radius: 16px;
-  flex-direction: column;
-  text-align: center;
-  text-decoration: none;
-  justify-content: center;
-  text-transform: uppercase;
-  transition: background-color 0.5s ease;
-}
 
 h2 {
   display: flex;
@@ -148,7 +96,7 @@ h2 {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 20px;
   justify-content: center;
-  margin: 10px 10px;
+  margin: 10px 20px;
   text-align: center;
 }
 
@@ -206,7 +154,7 @@ legend {
 }
 
 fieldset {
-  margin: 20px 20px;
+  margin: 20px 30px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -221,7 +169,6 @@ fieldset {
   padding-left: 5px;
 }
 
-/* Input and Button Styling */
 .form-input, .form-checkbox {
   width: 100%;
   padding: 10px;
@@ -299,6 +246,10 @@ section h3 {
   justify-items: center;
 }
 
+.footer-h2 {
+  align-items: baseline;
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -326,12 +277,14 @@ section h3 {
 	border-bottom-left-radius: 	20px;  	
 	color:#FFFFFF;
 }
+
 .icon i {
 	font-size:20px;
 	position:absolute;
 	left:9px;
 	top:10px;
 }
+
 .icon.social {
 	float:left;
 	margin:0 5px 0 0;
@@ -374,8 +327,7 @@ section h3 {
 /* Responsive Design */
 @media (min-width: 1008px) {
   .navbar .nav-links {
-    flex-direction: column;
-    align-items: center;
+    font-size: 1.5em;
   }
 
   .grid-container {
@@ -391,18 +343,45 @@ section h3 {
   }
 }
 
-@media (max-width: 365px) {
+@media (max-width: 433px) {
+  .hamburger-menu {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  a.hamburger-icon {
+    color: #FFCF10;
+    font-size: xx-large;
+  }
+
+  .hamburger-menu a.hamburger-icon.open {
+    color: #9FC492;
+  }
+
   .nav-links {
-    display: none;
+    position: fixed;
+    left: -100%;
+    top: 110px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCF10;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    transition: 0.3s ease;
+    z-index: 3;
+  }
+
+  .nav-links.open {
+    left: 0;
   }
 
   .grid-container {
     grid-template-columns: 1fr;
 
-  }
-
-  .grid-item {
-    height: 400px;
   }
 
   .button, .article-button {
@@ -424,7 +403,5 @@ section h3 {
   .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 15px 0;
   }
 }
