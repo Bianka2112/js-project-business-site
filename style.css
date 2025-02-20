@@ -3,7 +3,7 @@
   border: 1px solid #bbb;
 } */
 
-body{
+body {
   margin: 0;
 }
 
@@ -13,19 +13,28 @@ body{
   justify-content: space-around;
   align-items: center;
   padding: .5rem;
-  row-gap: 5px;
+  
 }
 
 .nav-logo {
+  display: flex;
   width: 50%;
   height: 50%;
 }
 
 .nav-links a {
-  padding: 1em;
+  /* display: none; */
+  padding: .5rem;
   color: #9FC492;
   font-size:1.5em;
   text-decoration: none;
+}
+
+.navbar a.icon {
+  background: #FFCF10;
+  /* display: none; */
+  right: 0;
+  top: 0;
 }
  
 .navbar a:hover{
@@ -37,6 +46,11 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+:focus {
+  outline: 1px dotted #FFCF10;
+  outline-offset: 0.2rem;
 }
 
 hr {
@@ -192,7 +206,7 @@ legend {
 }
 
 fieldset {
-  margin: 10px 20px;
+  margin: 20px 20px;
   display: block;
   align-items: center;
   justify-content: center;
@@ -217,9 +231,10 @@ fieldset {
   box-sizing: border-box;
   font-size: 1em;
 }
+
 .form-input:focus, .form-checkbox:focus {
-  outline: none;
-  border-color: #4f6d45;
+  outline: 1px;
+  border-color: #FFCF10;
 }
 
 .form-button {
@@ -239,9 +254,7 @@ fieldset {
   background-color: #f3ce37;
 }
 
-/* Checkbox Label Styling */
 label {
-  /* display: block; */
   font-size: 0.9em;
   color: #555;
   margin-bottom: 10px;
@@ -297,6 +310,7 @@ section h3 {
   display: flex;
   justify-content: space-around;
   margin: auto;
+  margin-bottom: 20px;
   width: 300px ;
   text-align: center;
 }
@@ -329,6 +343,7 @@ section h3 {
 	-webkit-transition: 0.5s;
 	-o-transition: 0.5s; 	
 }
+
 .icon.social:hover {
 	background:#FFCF10 ;
 	color:#6d6e71;
@@ -342,13 +357,16 @@ section h3 {
 	-o-filter: 		drop-shadow(0 1px 10px rgba(0,0,0,.8));
 	filter: 			drop-shadow(0 1px 10px rgba(0,0,0,.8));	 	
 }
+
 .icon.social.fb i {
 	left:13px;
 	top:10px;
 }
+
 .icon.social.tw i {
 	left:11px;
 }
+
 .icon.social.in i {
 	left:11px;
 }
@@ -369,7 +387,7 @@ section h3 {
   }
 
   .grid-item {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 400px; 
   }
 }
 
@@ -384,7 +402,7 @@ section h3 {
   }
 
   .grid-item {
-    height: 400px; /* Adjust height for smaller screens */
+    height: 400px;
   }
 
   .button, .article-button {
@@ -397,4 +415,16 @@ section h3 {
 
   fieldset {
     margin: 20px;}
+
+
+  h1 {
+    margin: auto 20px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0;
+  }
 }

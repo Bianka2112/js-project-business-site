@@ -7,12 +7,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <html>
   <title>The Stockholm Buzz</title>
 </head>
 
 <body>
-
   <header>
     <nav class="navbar">
       <img 
@@ -20,7 +20,7 @@
         src="./assets/logo-large-transparent.png" 
         alt="The Stockholm Buzz logo"
         style="width: 100px;">
-    
+        
       <div class="nav-links"> 
         <a href="#">Home</a>
         <a href="#">About</a>
@@ -42,9 +42,8 @@
         muted
         playsinline
         class="hero-video"
-        poster="./assets/eat-happy.jpg">
-        <!-- 👆 Adding the poster attribute to include a fallback image. Test this by opening the inspector and go in to the Network tab and simulate a slow internet connection by changing the Throttling from "No throttling" to "3G" or "Slow 4G"  -->
-          <source
+        poster="./assets/drinks-group.jpg">
+      <source
           src="./assets/hero-video.mp4" type="video/mp4">
         Your browser doesn't support the video tag
       </video>
@@ -135,8 +134,7 @@
 
 <form action="https://httpbin.org/anything" method="POST">
   <fieldset>
-    <legend>Let's keep you up-to-buzz
-    </legend>
+    <legend>Let's keep you up-to-buzz</legend>
       <div>
         <input 
           class="form-input"
@@ -144,7 +142,6 @@
           placeholder="Your Name"
           name="name" required>
       </div>
-  
       <div>
         <input 
           class="form-input"
@@ -152,8 +149,6 @@
           placeholder="example@email.com"
           name="email" 
           required>
-      </div>
-      
       </div>
       <section class="content-options">
         <h3>What type of content would you like to see more of?</h3>
@@ -206,7 +201,6 @@
   </fieldset>
 </form>
 
-<!-- Footer -->
 <footer>
   <section class="lower-banner">
     <h1>The latest and greatest buzz about food. drinks. & more.
@@ -216,29 +210,30 @@
   <hr>
 
   <div class="footer-container">
-      <img 
+    <img 
       src="./assets/logo-large-transparent.png"
       alt="The Stockholm Buzz logo"
       style="width: 100px;">
     <h2>Follow the honey...
-      <img 
-        class="img-footer" 
-        src="./assets/4.svg" 
-        style="width: 50px;">
+    <img 
+      class="img-footer" 
+      src="./assets/4.svg" 
+      style="width: 50px;">
     </h2> 
   </div>
 
-  <section>
+  <section class="footer-socials">
     <link 
       href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" 
       rel="stylesheet">
 
       <div class='demopadding'>
-      <div class='icon social fb'><i class='facebook'></i></div>
-      <div class='icon social tw'><i class='twitter'></i></div>
-      <div class='icon social in'><i class='linkedin'></i></div>
+        <div class='icon social fb'><i class='fa fa-facebook'></i></div>
+        <div class='icon social tw'><i class='fa fa-twitter'></i></div>
+        <div class='icon social in'><i class='fa fa-linkedin'></i></div>
       </div>  
   </section>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
