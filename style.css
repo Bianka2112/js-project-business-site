@@ -358,6 +358,17 @@ section h3 {
     color: #9FC492;
   }
 
+  .nav-links a {
+    padding: .5rem;
+    color: white;
+  }
+
+  .nav-links a:hover, .navlinks a:focus {
+    border: solid 2px #9FC492;
+    background-color: #FFCF10;
+    color: white;
+  }
+
   .nav-links {
     position: fixed;
     left: -100%;
