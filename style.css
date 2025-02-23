@@ -4,6 +4,7 @@ body {
   margin: 0;
 }
 
+/* Header and Navbar */
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -36,7 +37,6 @@ body {
 h1 {
   margin: auto 20px;
 }
-
 
 hr {
     display: block;
