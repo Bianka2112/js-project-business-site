@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-color: rgba(0, 0, 0, 0.04);
 }
 
 /* Header and Navbar */
@@ -21,7 +22,8 @@ body {
 .nav-links a {
   padding: .5rem;
   color: #9FC492;
-  font-size:1.3em;
+  font-size:1.5em;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -79,7 +81,8 @@ hr {
   position: relative;
   z-index: 2;
   font-size: 40px;
-  color: #FFCF10;
+  color: #ffcc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4)
 }
 
 
@@ -87,8 +90,10 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "La Belle aurore", "Brush Script MT", cursive;
-  color: #FFCF10;
+  font-family: "La Belle aurore", "Brush Script MT", cursive, serif;
+  color: #ffcc00;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px rgba(27, 26, 26, 0.2);
 }
 
 .grid-container {
@@ -176,12 +181,15 @@ fieldset {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  font-size: 1em;
+  font-size: 1.25rem;
 }
 
 .form-input:focus, .form-checkbox:focus {
   outline: 1px;
-  border-color: #FFCF10;
+  border-color: #E6B800;
+  box-shadow: 0 0 8px rgba(230, 184, 0, 0.6);
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
 }
 
 .form-button {
@@ -198,11 +206,11 @@ fieldset {
 }
 
 .form-button:hover {
-  background-color: #f3ce37;
+  background-color: #E6B800;
 }
 
 label {
-  font-size: 0.9em;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 10px;
 }
@@ -224,12 +232,12 @@ label {
 }
 
 .card-text {
-  font-size: 1em;
-  color: #f3ce37;
+  font-size: 1.25rem;
+  color: #D4A900;
 }
 
 section h3 {
-  font-size: 1.1em;
+  font-size: 1rem;
   color: #9FC492;
 }
 
@@ -242,12 +250,14 @@ section h3 {
   background-position: center;
   background-size: cover;
   color: #FFCF10;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   align-content: center;
   justify-items: center;
 }
 
 .footer-h2 {
   align-items: baseline;
+  font-size: 1.75rem;
 }
 
 .footer-container {
