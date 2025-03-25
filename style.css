@@ -170,7 +170,7 @@ fieldset {
 }
 
 .form-input::placeholder {
-  font-size: 1em;
+  font-size: 1rem;
   padding-left: 5px;
 }
 
@@ -210,7 +210,7 @@ fieldset {
 }
 
 label {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: #555;
   margin-bottom: 10px;
 }
