@@ -353,14 +353,15 @@ section h3 {
   }
 }
 
-@media (max-width: 433px) {
+@media (max-width: 500px) {
   .hamburger-menu {
     display: block;
     transition: all 0.3s ease-in-out;
   }
 
   a.hamburger-icon {
-    color: #FFCF10;
+    color: #ffcc00;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
     font-size: xx-large;
   }
 
@@ -371,12 +372,13 @@ section h3 {
   .nav-links a {
     padding: .5rem;
     color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
   }
 
   .nav-links a:hover, .navlinks a:focus {
     border: solid 2px #9FC492;
-    background-color: #FFCF10;
-    color: white;
+    background-color: #FFCF00;
+    color:white;
   }
 
   .nav-links {
@@ -410,7 +412,7 @@ section h3 {
   }
 
   legend {
-    font-size: 1.2em;
+    font-size: 1.2rem;
   }
 
   fieldset {
@@ -421,6 +423,9 @@ section h3 {
     margin: auto 20px;
   }
 
+  h2 {
+    font-size: 2rem;
+  }
   .footer-container {
     display: flex;
     flex-wrap: wrap;
