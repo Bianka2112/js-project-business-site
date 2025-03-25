@@ -31,13 +31,12 @@
         <a href="#">About</a>
         <a href="#">Contact</a>
       </div>
+
       <img 
         class="bees" 
         src="./assets/3.svg" 
         alt="decorative bees" 
         style="width: 100px;">
-      
-      
     </nav>
   </header>
 
@@ -63,9 +62,11 @@
   
   <div class="article-heading">
     <h2>Buzzing Topics
-      <img class="bees" 
-      src="./assets/3.svg" alt="decorative bees" 
-      style="width: 100px;">
+      <img 
+        class="bees" 
+        src="./assets/3.svg" 
+        alt="decorative bees" 
+        style="width: 100px;">
     </h2>
   </div>
   
@@ -145,40 +146,55 @@
   <fieldset>
     <legend>Let's keep you up-to-buzz</legend>
       <div>
+        <label for="name">Your Name</label>
         <input 
+          id="name"
           class="form-input"
           type="text" 
           placeholder="Your Name"
-          name="name" required>
+          name="name" 
+          required>
       </div>
       <div>
+        <label for="email">Email Address</label>
         <input 
+          id="email"
           class="form-input"
           type="email" 
           placeholder="example@email.com"
           name="email" 
           required>
       </div>
+
       <section class="content-options">
         <h3>What type of content would you like to see more of?</h3>
 
           <div class="checkbox-card">
             <label>
-              <input class="form-checkbox" type="checkbox" name="content_trending_shops">
+              <input 
+                class="form-checkbox" 
+                type="checkbox" 
+                name="content_trending_shops">
               <span class="card-text">Trending Shops</span>
             </label>
           </div>
 
           <div class="checkbox-card">
             <label>
-              <input class="form-checkbox" type="checkbox" name="content_video_reviews">
+              <input 
+                class="form-checkbox" 
+                type="checkbox" 
+                name="content_video_reviews">
               <span class="card-text">Video Reviews</span>
             </label>
           </div>
 
           <div class="checkbox-card">
             <label>
-              <input class="form-checkbox" type="checkbox" name="content_community_stories">
+              <input 
+                class="form-checkbox" 
+                type="checkbox" 
+                name="content_community_stories">
               <span class="card-text">Community Stories</span>
             </label>
           </div>
@@ -189,20 +205,27 @@
 
           <div class="checkbox-card">
             <label>
-              <input class="form-checkbox" type="checkbox" name="participate_testing_new_features">
+              <input 
+                class="form-checkbox" 
+                type="checkbox" 
+                name="participate_testing_new_features">
               <span class="card-text">Testing New Features</span>
             </label>
           </div>
 
           <div class="checkbox-card">
             <label>
-              <input class="form-checkbox" type="checkbox" name="participate_early_access_offers">
+              <input 
+                class="form-checkbox" 
+                type="checkbox" 
+                name="participate_early_access_offers">
               <span class="card-text">Exclusive Early Access Offers</span>
             </label>
           </div>
       </section>
 
-      <button class="form-button"
+      <button 
+        class="form-button"
         type="submit">
         I want in 🍯 🐝
       </button>
@@ -212,8 +235,7 @@
 
 <footer>
   <section class="lower-banner">
-    <h1>The latest and greatest buzz about food. drinks. & more.
-    </h1>
+    <h1>The latest and greatest buzz about food. drinks. & more.</h1>
   </section>
 
   <hr>
@@ -225,7 +247,8 @@
       style="width: 100px;">
     <h2 class="footer-h2">Follow the honey...
     <img 
-      class="img-footer" 
+      class="img-footer"
+      alt="dripping honey image" 
       src="./assets/4.svg" 
       style="width: 50px;">
     </h2> 
